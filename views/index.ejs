@@ -24,6 +24,27 @@
   <body>
     <!-- START HERE -->
     <div class="container">
+
+      <% if(success && success.length>0 ){ %>
+        <div class="alert alert-success alert-dismissible fade show my-3" role="alert">
+            <%=  success %>    
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                       <span aria-hidden="true">&times;</span>
+                       <span class="sr-only">Close</span>
+                   </button>
+                  </div>
+
+            <% } %>
+            <% if(error && error.length>0 ){ %>
+              <div class="alert alert-danger alert-dismissible fade show my-3" role="alert">
+                  <%=  error %>    
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                             <span aria-hidden="true">&times;</span>
+                             <span class="sr-only">Close</span>
+                         </button>
+                        </div>
+                  <% } %>
+            
       <header id="main-header">
         <div class="row no-gutters">
           <div class="col-lg-4 col-md-5">
@@ -37,22 +58,22 @@
                 >
                   <h1 class="display-4">Arafat Hossain</h1>
                   <div class="d-none d-md-block">
-                    <a href="https://www.researchgate.net/profile/Arfat_Hossain" class="text-white">
+                    <a href="https://www.researchgate.net/profile/Arfat_Hossain" class="text-white" target=_blank>
                       <i class="fab fa-researchgate"></i>
                     </a>
                   </div>
                   <div>
-                    <a href="https://www.facebook.com/arafat.hossain.3572" class="text-white">
+                    <a href="https://www.facebook.com/arafat.hossain.3572" class="text-white" target=_blank>
                       <i class="fab fa-facebook"></i>
                     </a>
                   </div>
                   <div>
-                    <a href="https://www.linkedin.com/in/arafat-hossain-a89531148/" class="text-white">
+                    <a href="https://www.linkedin.com/in/arafat-hossain-a89531148/" class="text-white" target=_blank>
                       <i class="fab fa-linkedin-in"></i>
                     </a>
                   </div>
                   <div>
-                    <a href="https://github.com/arafatruetbd" class="text-white">
+                    <a href="https://github.com/arafatruetbd" class="text-white" target=_blank>
                       <i class="fab fa-github"></i>
                     </a>
                   </div>
@@ -121,43 +142,43 @@
         <hr />
         <h4>HTML 5</h4>
         <div class="progress mb-3">
-          <div class="progress-bar bg-success" style="width: 100%;"></div>
+          <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 100%;"></div>
         </div>
         <h4>CSS 3</h4>
         <div class="progress mb-3">
-          <div class="progress-bar bg-success" style="width: 100%;"></div>
+          <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 100%;"></div>
         </div>
         <h4>Javascript</h4>
         <div class="progress mb-3">
-          <div class="progress-bar bg-success" style="width: 90%;"></div>
+          <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 90%;"></div>
         </div>
         <h4>PHP</h4>
         <div class="progress mb-3">
-          <div class="progress-bar bg-success" style="width: 80%;"></div>
+          <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 80%;"></div>
         </div>
         <h4>Python</h4>
         <div class="progress mb-3">
-          <div class="progress-bar bg-success" style="width: 40%;"></div>
+          <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 40%;"></div>
         </div>
         <h4>Bootstrap</h4>
         <div class="progress mb-3">
-          <div class="progress-bar bg-success" style="width: 100%;"></div>
+          <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 100%;"></div>
         </div>
         <h4>Node JS</h4>
         <div class="progress mb-3">
-          <div class="progress-bar bg-success" style="width: 99%;"></div>
+          <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 99%;"></div>
         </div>
         <h4>Express JS</h4>
         <div class="progress mb-3">
-          <div class="progress-bar bg-success" style="width: 100%;"></div>
+          <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 100%;"></div>
         </div>
         <h4>Mongo DB</h4>
         <div class="progress mb-3">
-          <div class="progress-bar bg-success" style="width: 100%;"></div>
+          <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 100%;"></div>
         </div>
         <h4>MySQL</h4>
         <div class="progress mb-3">
-          <div class="progress-bar bg-success" style="width: 100%;"></div>
+          <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 100%;"></div>
         </div>
       </div>
     </div>
@@ -244,52 +265,145 @@
      </div>
 
      <div class="card card-body py-5">
-       <h3>What Have I Built?</h3>
-       <p>1.Online judge System using core PHP. <br> 2.Blog Application using Node.JS <br>3.YelpCamp Project using Node.JS.<br> 4.Weather Forecast App using API.<br> 5.Chat App using Socket.io.<br> 6.Health Care Android App using Java. </p>
-       <div class="row no-gutters">
-         <div class="col-md-3">
-           <a href="/img/Blog1.PNG" data-toggle="lightbox">
-          <img src="/img/Blog1.PNG" alt="" class="img-fluid">
-          </a>
+       <section id="users">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="card">
+                <div class="card-header">
+                  <h4>What Have I Built?</h4>
+                </div>
+                <table class="table table-striped">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th>#</th>
+                      <th>Name</th>
+                      <th>Language</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td> Online judge System</td>
+                      <td>Core PHP</td>
+                      <td>
+                        <a href="#" class="btn btn-secondary">
+                          <i class="fas fa-angle-double-right"></i> View URL
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Blog Application</td>
+                      <td>Node.JS</td>
+                      <td>
+                        <a href="https://arafat-blog-app.herokuapp.com/explorer" class="btn btn-secondary"  target="_blank">
+                          <i class="fas fa-angle-double-right"></i> View URL
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>YelpCamp Project.</td>
+                      <td>Node.JS</td>
+                      <td>
+                        <a href="https://arafat-yelcamp.herokuapp.com/" class="btn btn-secondary"  target="_blank">
+                          <i class="fas fa-angle-double-right"></i> View URL
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>Weather Forecast App.</td>
+                      <td>Node.JS using API</td>
+                      <td>
+                        <a href="https://arafat-weather-application.herokuapp.com/" class="btn btn-secondary"  target="_blank">
+                          <i class="fas fa-angle-double-right"></i> View URL
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>Chat App</td>
+                      <td>Node.JS using Socket.io</td>
+                      <td>
+                        <a href="https://arafat-node-chat-app.herokuapp.com/" class="btn btn-secondary" target="_blank">
+                          <i class="fas fa-angle-double-right"></i> View URL
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td> Health Care Android App</td>
+                      <td>Java</td>
+                      <td>
+                        <a href="#" class="btn btn-secondary">
+                          <i class="fas fa-angle-double-right"></i> View URL
+                        </a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+       
+    
+      <br>
+      <div class="card card-header">
+        <h4>Gallery</h4>
+        <div class=" card card-body">
+          <div class="row no-gutters mt-3">
+            <div class="col-md-3">
+              <a href="/img/Blog1.PNG" data-toggle="lightbox">
+             <img src="/img/Blog1.PNG" alt="" class="img-fluid">
+             </a>
+            </div>
+            <div class="col-md-3">
+             <a href="/img/Blog2.PNG" data-toggle="lightbox">
+            <img src="/img/Blog2.PNG" alt="" class="img-fluid">
+            </a>
+           </div>
+           <div class="col-md-3">
+             <a href="/img/Blog3.PNG" data-toggle="lightbox">
+            <img src="/img/Blog3.PNG" alt="" class="img-fluid">
+            </a>
+           </div>
+           <div class="col-md-3">
+             <a href="/img/Blog4.PNG" data-toggle="lightbox">
+            <img src="/img/Blog4.PNG" alt="" class="img-fluid">
+            </a>
+           </div>
+          </div>
+          <div class="row no-gutters">
+           <div class="col-md-3">
+             <a href="/img/YelpCamp1.PNG" data-toggle="lightbox">
+            <img src="/img/YelpCamp1.PNG" alt="" class="img-fluid">
+            </a>
+           </div>
+           <div class="col-md-3">
+            <a href="/img/YelpCamp2.PNG" data-toggle="lightbox">
+           <img src="/img/YelpCamp2.PNG" alt="" class="img-fluid">
+           </a>
+          </div>
+          <div class="col-md-3">
+            <a href="/img/YelpCamp3.PNG" data-toggle="lightbox">
+           <img src="/img/YelpCamp3.PNG" alt="" class="img-fluid">
+           </a>
+          </div>
+          <div class="col-md-3">
+            <a href="/img/weather.PNG" data-toggle="lightbox">
+           <img src="/img/weather.PNG" alt="" class="img-fluid">
+           </a>
+          </div>
          </div>
-         <div class="col-md-3">
-          <a href="/img/Blog2.PNG" data-toggle="lightbox">
-         <img src="/img/Blog2.PNG" alt="" class="img-fluid">
-         </a>
         </div>
-        <div class="col-md-3">
-          <a href="/img/Blog3.PNG" data-toggle="lightbox">
-         <img src="/img/Blog3.PNG" alt="" class="img-fluid">
-         </a>
-        </div>
-        <div class="col-md-3">
-          <a href="/img/Blog4.PNG" data-toggle="lightbox">
-         <img src="/img/Blog4.PNG" alt="" class="img-fluid">
-         </a>
-        </div>
-       </div>
-       <div class="row no-gutters">
-        <div class="col-md-3">
-          <a href="/img/YelpCamp1.PNG" data-toggle="lightbox">
-         <img src="/img/YelpCamp1.PNG" alt="" class="img-fluid">
-         </a>
-        </div>
-        <div class="col-md-3">
-         <a href="/img/YelpCamp2.PNG" data-toggle="lightbox">
-        <img src="/img/YelpCamp2.PNG" alt="" class="img-fluid">
-        </a>
-       </div>
-       <div class="col-md-3">
-         <a href="/img/YelpCamp3.PNG" data-toggle="lightbox">
-        <img src="/img/YelpCamp3.PNG" alt="" class="img-fluid">
-        </a>
-       </div>
-       <div class="col-md-3">
-         <a href="/img/weather.PNG" data-toggle="lightbox">
-        <img src="/img/weather.PNG" alt="" class="img-fluid">
-        </a>
-       </div>
       </div>
+     
+       
      </div>
    </div>
    <!-- CONTACT -->
@@ -305,7 +419,7 @@
      <div class="card card-body py-5">
        <h3>Get In Touch</h3>
        <p>E-mail: arafat.ruet.bd@gmail.com</p>
-       <form>
+       <form action="/" method="POST">
          <div class="form-group">
            <div class="input-group input-group-lg">
              <div class="input-group-prepend">
@@ -313,7 +427,7 @@
                 <i class="fas fa-user"></i>
               </span>
              </div>
-             <input type="text" class="form-control bg-dark text-white" placeholder="Name">
+             <input type="text" name="name" class="form-control bg-dark text-white" placeholder="Name">
            </div>
          </div>
          <div class="form-group">
@@ -323,7 +437,7 @@
                <i class="fas fa-envelope"></i>
              </span>
             </div>
-            <input type="email" class="form-control bg-dark text-white" placeholder="Email">
+            <input type="email" name="email" class="form-control bg-dark text-white" placeholder="Email">
           </div>
         </div>
 
@@ -334,7 +448,7 @@
                 <i class="fas fa-pencil-alt"></i>
               </span>
             </div>
-            <textarea class="form-control bg-dark text-white" placeholder="Name"></textarea>
+            <textarea name="description" class="form-control bg-dark text-white" placeholder="Message"></textarea>
           </div>
         </div>
 
@@ -346,7 +460,7 @@
    <footer id="main-footer" class="p-5 bg-dark text-white">
      <div class="row">
        <div class="col-md-6">
-         <a href="https://drive.google.com/file/d/1UUQWRzWmSa0LP_2sM0ubuQ3JFKkBk28k/view?usp=sharing" class="btn btn-outline-light">
+         <a href="https://drive.google.com/file/d/1UUQWRzWmSa0LP_2sM0ubuQ3JFKkBk28k/view?usp=sharing" class="btn btn-outline-light" target=_blank>
            <i class="fas fa-cloud"></i> Download Resume
          </a>
        </div>
