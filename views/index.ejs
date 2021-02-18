@@ -1,509 +1,535 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
-      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
-      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
-    <link rel="stylesheet" href="/css/style.css" />
-    <title>Portfolio of Arafat Hossain</title>
-  </head>
 
-  <body>
-    <!-- START HERE -->
-    <div class="container">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+    integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <title>Portfolio of Arafat Hossain</title>
+</head>
 
-      <% if(success && success.length>0 ){ %>
-        <div class="alert alert-success alert-dismissible fade show my-3" role="alert">
-            <%=  success %>    
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                       <span aria-hidden="true">&times;</span>
-                       <span class="sr-only">Close</span>
-                   </button>
-                  </div>
+<body>
+  <!-- START HERE -->
+  <div class="container">
 
-            <% } %>
-            <% if(error && error.length>0 ){ %>
-              <div class="alert alert-danger alert-dismissible fade show my-3" role="alert">
-                  <%=  error %>    
-                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                             <span aria-hidden="true">&times;</span>
-                             <span class="sr-only">Close</span>
-                         </button>
+    <% if(success && success.length>0 ){ %>
+      <div class="alert alert-success alert-dismissible fade show my-3" role="alert">
+        <%= success %>
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            <span class="sr-only">Close</span>
+          </button>
+      </div>
+
+      <% } %>
+        <% if(error && error.length>0 ){ %>
+          <div class="alert alert-danger alert-dismissible fade show my-3" role="alert">
+            <%= error %>
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                <span class="sr-only">Close</span>
+              </button>
+          </div>
+          <% } %>
+
+            <header id="main-header">
+              <div class="row no-gutters">
+                <div class="col-lg-4 col-md-5">
+                  <img src="/img/image.jpg" alt="" />
+                </div>
+                <div class="col-lg-8 col-md-7">
+                  <div class="d-flex flex-column">
+                    <div class="p-5 bg-dark text-white">
+                      <div class="d-flex flex-row justify-content-between align-items-center">
+                        <h1 class="display-4">Arafat Hossain</h1>
+                        <div class="d-none d-md-block">
+                          <a href="https://www.researchgate.net/profile/Arfat_Hossain" class="text-white" target=_blank>
+                            <i class="fab fa-researchgate"></i>
+                          </a>
                         </div>
-                  <% } %>
-            
-      <header id="main-header">
-        <div class="row no-gutters">
-          <div class="col-lg-4 col-md-5">
-            <img src="/img/image.jpg" alt="" />
-          </div>
-          <div class="col-lg-8 col-md-7">
-            <div class="d-flex flex-column">
-              <div class="p-5 bg-dark text-white">
-                <div
-                  class="d-flex flex-row justify-content-between align-items-center"
-                >
-                  <h1 class="display-4">Arafat Hossain</h1>
-                  <div class="d-none d-md-block">
-                    <a href="https://www.researchgate.net/profile/Arfat_Hossain" class="text-white" target=_blank>
-                      <i class="fab fa-researchgate"></i>
-                    </a>
-                  </div>
-                  <div>
-                    <a href="https://www.facebook.com/arafat.hossain.3572" class="text-white" target=_blank>
-                      <i class="fab fa-facebook"></i>
-                    </a>
-                  </div>
-                  <div>
-                    <a href="https://www.linkedin.com/in/arafat-hossain-a89531148/" class="text-white" target=_blank>
-                      <i class="fab fa-linkedin-in"></i>
-                    </a>
-                  </div>
-                  <div>
-                    <a href="https://github.com/arafatruetbd" class="text-white" target=_blank>
-                      <i class="fab fa-github"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="p-4 bg-black">
-                Experienced Full Stack Web Developer (MERN Stack)
-              </div>
-              <div>
-                <div
-                  class="d-flex flex-row text-white align-items-stretch text-center"
-                >
-                  <div
-                    class="port-item p-4 bg-primary"
-                    data-toggle="collapse"
-                    data-target="#home"
-                  >
-                    <i class="fas fa-home fa-2x d-block"></i>
-                    <span class="d-none d-sm-block">Home</span>
-                  </div>
-                  <div
-                    class="port-item p-4 bg-success"
-                    data-toggle="collapse"
-                    data-target="#resume"
-                  >
-                    <i class="fas fa-graduation-cap fa-2x d-block"></i>
-                    <span class="d-none d-sm-block">Resume</span>
-                  </div>
-                  <div
-                    class="port-item p-4 bg-warning"
-                    data-toggle="collapse"
-                    data-target="#work"
-                  >
-                    <i class="fas fa-folder-open fa-2x d-block"></i>
-                    <span class="d-none d-sm-block">Work</span>
-                  </div>
-                  <div
-                    class="port-item p-4 bg-danger"
-                    data-toggle="collapse"
-                    data-target="#contact"
-                  >
-                    <i class="fas fa-envelope fa-2x d-block"></i>
-                    <span class="d-none d-sm-block">Contact</span>
+                        <div>
+                          <a href="https://www.facebook.com/arafat.hossain.3572" class="text-white" target=_blank>
+                            <i class="fab fa-facebook"></i>
+                          </a>
+                        </div>
+                        <div>
+                          <a href="https://www.linkedin.com/in/arafat-hossain-a89531148/" class="text-white"
+                            target=_blank>
+                            <i class="fab fa-linkedin-in"></i>
+                          </a>
+                        </div>
+                        <div>
+                          <a href="https://github.com/arafatruetbd" class="text-white" target=_blank>
+                            <i class="fab fa-github"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-4 bg-black">
+                      Experienced Full Stack Web Developer (MERN Stack)
+                    </div>
+                    <div>
+                      <div class="d-flex flex-row text-white align-items-stretch text-center">
+                        <div class="port-item p-4 bg-primary" data-toggle="collapse" data-target="#home">
+                          <i class="fas fa-home fa-2x d-block"></i>
+                          <span class="d-none d-sm-block">Home</span>
+                        </div>
+                        <div class="port-item p-4 bg-success" data-toggle="collapse" data-target="#resume">
+                          <i class="fas fa-graduation-cap fa-2x d-block"></i>
+                          <span class="d-none d-sm-block">Resume</span>
+                        </div>
+                        <div class="port-item p-4 bg-warning" data-toggle="collapse" data-target="#work">
+                          <i class="fas fa-folder-open fa-2x d-block"></i>
+                          <span class="d-none d-sm-block">Work</span>
+                        </div>
+                        <div class="port-item p-4 bg-danger" data-toggle="collapse" data-target="#contact">
+                          <i class="fas fa-envelope fa-2x d-block"></i>
+                          <span class="d-none d-sm-block">Contact</span>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </header>
-  
+            </header>
 
-    <!-- HOME -->
-    <div id="home" class="collapse show">
-      <div class="card card-body bg-primary text-white py-5">
-        <h2>Welcome To My Page</h2>
-        <p class="lead">
-         Hi There! I'm Arafat Hossain from Chittagong,Bangladesh.I currently work as a Full Stack Web Developer at Affable Technology. I have many years experience creating software,mobile apps and websites for both myself and for clients.I have experience programming in many different language such as C, C++, Javascript,PHP. Moreover, I have built different application by using MongoDB,Node.JS, MySQL, Express JS and Java.<br> I graduated from Rajshahi University of Engineering And Technology with first class (3.42 CGPA) in Computer Science and Engineering.
-        </p>
-      </div>
-      <div class="card card-body py-5">
-        <h3>Technical Skills</h3>
-        <p>
-          My proficiency in each skill given below.
-        </p>
-        <hr />
-        <h4>HTML 5</h4>
-        <div class="progress mb-3">
-          <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 95%;"></div>
-        </div>
-        <h4>CSS 3</h4>
-        <div class="progress mb-3">
-          <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 80%;"></div>
-        </div>
-        <h4>Bootstrap</h4>
-        <div class="progress mb-3">
-          <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 90%;"></div>
-        </div>
-        <h4>React, React-Redux</h4>
-        <div class="progress mb-3">
-          <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 90%;"></div>
-        </div>
-        <h4>Angular</h4>
-        <div class="progress mb-3">
-          <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 40%;"></div>
-        </div>
-        <h4>Javascript</h4>
-        <div class="progress mb-3">
-          <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 90%;"></div>
-        </div>
-        <h4>Node JS</h4>
-        <div class="progress mb-3">
-          <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 85%;"></div>
-        </div>
-        <h4>Express JS</h4>
-        <div class="progress mb-3">
-          <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 95%;"></div>
-        </div>
-        <h4>Mongo DB</h4>
-        <div class="progress mb-3">
-          <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 95%;"></div>
-        </div>
-        <h4>MySQL</h4>
-        <div class="progress mb-3">
-          <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 95%;"></div>
-        </div>
-        <h4>PHP</h4>
-        <div class="progress mb-3">
-          <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 60%;"></div>
-        </div>
-        <h4>Python</h4>
-        <div class="progress mb-3">
-          <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 40%;"></div>
-        </div>
-      </div>
-    </div>
 
-    <!-- RESUME -->
-    <div id="resume" class="collapse">
-      <div class="card card-body bg-success text-white py-5">
-        <h2>Career Objective</h2>
-        <p class="lead">To build a successful career and be the part of a flourishing organization that gives me a scope to show my creativity and integrity, at the same time to enhance my knowledge, professional skills, competency and to reach the pinnacle in the computer science world with absolute determination, dedication and hard work</p>
-      </div>
-
-      <div class="card card-body py-5">
-        <h3>Where Have I Worked</h3>
-        <p>I enjoy being challenged and working on projects that require me to work outside my comfort and knowledge set, as continuing to learn new languages and development techniques are important to me and the success of your organization. </p>
-        <div class="card-deck">
-          <div class="card">
-            <div class="card-body">
-            <h4 class="card-title">Chittagong Club Limited</h4>
-            <p class="card-text">
-              1. Network routing, security protocols & implementations: TCP/IP <br>
-2. Troubleshoot system & network problems & Diagnose & solve hardware or software faults and replacing parts <br>
-3. Crystal Report development <br>
-4. ERP software maintenance <br> <br><br> 
-            </p>
-            <p class="p-2 mb-3 bg-dark text-white">
-              Position: System Engineer (IT)
-            </p>
-          </div>
-          <div class="card-footer">
-            <h6 class="text-muted">Dates: 2018-2019</h6>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-body">
-          <h4 class="card-title">Artillery Centre and School</h4>
-          <p class="card-text">
-            Worked as an ICT Lecturer where I deliver quality lecture on various topics.
-          </p> <br> <br> <br><br> <br> <br> <br>
-          <p class="p-2 mb-3  bg-dark text-white">
-            Position: Instructor (ICT)
-          </p>
-        </div>
-        <div class="card-footer">
-          <h6 class="text-muted">Dates: 2019-2020</h6>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-body">
-        <h4 class="card-title">Affable Technology</h4>
-        <p class="card-text">
-          Highly skilled in designing, testing, and developing software thorough understanding of data structures and algorithms Knowledgeable of back-end development best practices Hands-on software troubleshooting experience Proven track record of proper documentation for future maintenance and upgrades
-        </p>
-        <p class="p-2 mb-3 bg-dark text-white">
-          Position: Full Stack Web Developer
-        </p>
-       
-      </div>
-      <div class="card-footer">
-        <h6 class="text-muted">Dates: 2019-Present</h6>
-      </div>
-    </div>
-      </div>
-    </div>
-    </div>
-
-    <!-- WORK -->
-
-   <div id="work" class="collapse">
-     <div class="card card-body bg-warning text-white py-5">
-       <h2>My Work</h2>
-       <p class="lead">
-        I have built severals application on various framework during my professional life.Moreover, i have experience on android app development.PHP,Java,Javascript,MongoDB,MySQL,Node.JS,Express.JS,Socket.io,Bootstrap was used to develop those applications.
-       </p>
-     </div>
-
-     <div class="card card-body py-5">
-       <section id="users">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <div class="card">
-                <div class="card-header">
-                  <h4>What Have I Built?</h4>
+            <!-- HOME -->
+            <div id="home" class="collapse show">
+              <div class="card card-body bg-primary text-white py-5">
+                <h2>Welcome To My Page</h2>
+                <p class="lead">
+                  Hi There! I'm Arafat Hossain from Chittagong,Bangladesh.I currently work as a Full Stack Web Developer
+                  at Market Bangla Limited. I have many years experience creating software,mobile apps and websites for
+                  both myself and for clients.I have experience programming in many different language such as C, C++,
+                  Javascript,PHP. Moreover, I have built different application by using
+                  MongoDB,PostgreSQL,MySQL,Node.JS,Express JS,Hapi.JS and React, React-Redux.<br> I graduated from
+                  Rajshahi University of Engineering And Technology with first class (3.42 CGPA) in Computer Science and
+                  Engineering.
+                </p>
+              </div>
+              <div class="card card-body py-5">
+                <h3>Technical Skills</h3>
+                <p>
+                  My proficiency in each skill given below.
+                </p>
+                <hr />
+                <h4>HTML 5</h4>
+                <div class="progress mb-3">
+                  <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 95%;">
+                  </div>
                 </div>
-                <table class="table table-striped">
-                  <thead class="thead-dark">
-                    <tr>
-                      <th>#</th>
-                      <th>Name</th>
-                      <th>Language</th>
-                      <th></th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>1</td>
-                      <td>E-commerce</td>
-                      <td>MERN Stack</td>
-                      <td>
-                        <a href="https://e-commerce-arafat.herokuapp.com/" class="btn btn-secondary" target="_blank">
-                          <i class="fas fa-angle-double-right"></i> View URL
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>2</td>
-                      <td>Blog Application</td>
-                      <td>Javascript (Node.JS)</td>
-                      <td>
-                        <a href="https://arafat-blog.herokuapp.com/explorer" class="btn btn-secondary"  target="_blank">
-                          <i class="fas fa-angle-double-right"></i> View URL
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>3</td>
-                      <td>Social Network for developer</td>
-                      <td>MERN Stack</td>
-                      <td>
-                        <a href="https://dev-arafat.herokuapp.com/" class="btn btn-secondary"  target="_blank">
-                          <i class="fas fa-angle-double-right"></i> View URL
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>4</td>
-                      <td>Chat App</td>
-                      <td>Javascript (Node.JS using Socket.io)</td>
-                      <td>
-                        <a href="https://arafat-node-chat-app.herokuapp.com/" class="btn btn-secondary" target="_blank">
-                          <i class="fas fa-angle-double-right"></i> View URL
-                        </a>
-                      </td>
-                    </tr>
-                      <tr>
-                      <td>5</td>
-                      <td>Burger App</td>
-                      <td>React (Javascript Library)</td>
-                      <td>
-                        <a href="https://react-my-burger-164c2.web.app/" class="btn btn-secondary" target="_blank">
-                          <i class="fas fa-angle-double-right"></i> View URL
-                        </a>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+                <h4>CSS 3</h4>
+                <div class="progress mb-3">
+                  <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 80%;">
+                  </div>
+                </div>
+                <h4>Bootstrap</h4>
+                <div class="progress mb-3">
+                  <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 90%;">
+                  </div>
+                </div>
+                <h4>React, React-Redux</h4>
+                <div class="progress mb-3">
+                  <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 90%;">
+                  </div>
+                </div>
+                <h4>Angular</h4>
+                <div class="progress mb-3">
+                  <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 40%;">
+                  </div>
+                </div>
+                <h4>Javascript</h4>
+                <div class="progress mb-3">
+                  <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 90%;">
+                  </div>
+                </div>
+                <h4>Node JS</h4>
+                <div class="progress mb-3">
+                  <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 85%;">
+                  </div>
+                </div>
+                <h4>Express JS</h4>
+                <div class="progress mb-3">
+                  <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 95%;">
+                  </div>
+                </div>
+                <h4>Hapi JS</h4>
+                <div class="progress mb-3">
+                  <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 95%;">
+                  </div>
+                </div>
+                <h4>Mongo DB</h4>
+                <div class="progress mb-3">
+                  <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 90%;">
+                  </div>
+                </div>
+                <h4>PostgreSQL</h4>
+                <div class="progress mb-3">
+                  <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 95%;">
+                  </div>
+                </div>
+                <h4>MySQL</h4>
+                <div class="progress mb-3">
+                  <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 95%;">
+                  </div>
+                </div>
+                <h4>PHP</h4>
+                <div class="progress mb-3">
+                  <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 50%;">
+                  </div>
+                </div>
+                <h4>Python</h4>
+                <div class="progress mb-3">
+                  <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 40%;">
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-       
-    
-      <br>
-      <div class="card card-header">
-        <h4>Gallery</h4>
-        <div class=" card card-body">
-          <div class="row no-gutters mt-3">
-            <div class="col-md-3">
-              <a href="/img/Blog1.PNG" data-toggle="lightbox">
-             <img src="/img/Blog1.PNG" alt="" class="img-fluid">
-             </a>
+
+            <!-- RESUME -->
+            <div id="resume" class="collapse">
+              <div class="card card-body bg-success text-white py-5">
+                <h2>Career Objective</h2>
+                <p class="lead">To build a successful career and be the part of a flourishing organization that gives me
+                  a scope to show my creativity and integrity, at the same time to enhance my knowledge, professional
+                  skills, competency and to reach the pinnacle in the computer science world with absolute
+                  determination, dedication and hard work</p>
+              </div>
+
+              <div class="card card-body py-5">
+                <h3>Where Have I Worked</h3>
+                <p>I enjoy being challenged and working on projects that require me to work outside my comfort and
+                  knowledge set, as continuing to learn new languages and development techniques are important to me and
+                  the success of your organization. </p>
+                <div class="card-deck">
+                  <div class="card">
+                    <div class="card-body">
+                      <h4 class="card-title">Chittagong Club Limited</h4>
+                      <p class="card-text">
+                        1. Network routing, security protocols & implementations: TCP/IP <br>
+                        2. Troubleshoot system & network problems & Diagnose & solve hardware or software faults and
+                        replacing parts <br>
+                        3. Crystal Report development <br>
+                        4. ERP software maintenance <br> <br><br>
+                      </p>
+                      <p class="p-2 mb-3 bg-dark text-white">
+                        Position: System Engineer (IT)
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                      <h6 class="text-muted">Dates: 2018-2019</h6>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-body">
+                      <h4 class="card-title">Artillery Centre and School</h4>
+                      <p class="card-text">
+                        Worked as an ICT Lecturer where I deliver quality lecture on various topics.
+                      </p> <br> <br> <br><br> <br> <br> <br>
+                      <p class="p-2 mb-3  bg-dark text-white">
+                        Position: Instructor (ICT)
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                      <h6 class="text-muted">Dates: 2019-2020</h6>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-body">
+                      <h4 class="card-title">Market Bangla Limited</h4>
+                      <p class="card-text">
+                        Highly skilled in designing, testing, and developing software thorough understanding of data
+                        structures and algorithms Knowledgeable of back-end development best practices Hands-on software
+                        troubleshooting experience Proven track record of proper documentation for future maintenance
+                        and upgrades
+                      </p>
+                      <p class="p-2 mb-3 bg-dark text-white">
+                        Position: Full Stack Web Developer
+                      </p>
+
+                    </div>
+                    <div class="card-footer">
+                      <h6 class="text-muted">Dates: 2019-Present</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="col-md-3">
-             <a href="/img/Blog2.PNG" data-toggle="lightbox">
-            <img src="/img/Blog2.PNG" alt="" class="img-fluid">
-            </a>
-           </div>
-           <div class="col-md-3">
-             <a href="/img/Blog3.PNG" data-toggle="lightbox">
-            <img src="/img/Blog3.PNG" alt="" class="img-fluid">
-            </a>
-           </div>
-           <div class="col-md-3">
-             <a href="/img/Blog4.PNG" data-toggle="lightbox">
-            <img src="/img/Blog4.PNG" alt="" class="img-fluid">
-            </a>
-           </div>
-          </div>
-          <div class="row no-gutters">
-           <div class="col-md-3">
-             <a href="/img/YelpCamp1.PNG" data-toggle="lightbox">
-            <img src="/img/YelpCamp1.PNG" alt="" class="img-fluid">
-            </a>
-           </div>
-           <div class="col-md-3">
-            <a href="/img/YelpCamp2.PNG" data-toggle="lightbox">
-           <img src="/img/YelpCamp2.PNG" alt="" class="img-fluid">
-           </a>
-          </div>
-          <div class="col-md-3">
-            <a href="/img/YelpCamp3.PNG" data-toggle="lightbox">
-           <img src="/img/YelpCamp3.PNG" alt="" class="img-fluid">
-           </a>
-          </div>
-          <div class="col-md-3">
-            <a href="/img/weather.PNG" data-toggle="lightbox">
-           <img src="/img/weather.PNG" alt="" class="img-fluid">
-           </a>
-          </div>
-         </div>
-         <div class="row no-gutters">
-          <div class="col-md-3">
-            <a href="/img/E-commerce1.PNG" data-toggle="lightbox">
-           <img src="/img/E-commerce1.PNG" alt="" class="img-fluid">
-           </a>
-          </div>
-          <div class="col-md-3">
-           <a href="/img/E-commerce2.PNG" data-toggle="lightbox">
-          <img src="/img/E-commerce2.PNG" alt="" class="img-fluid">
-          </a>
-         </div>
-         <div class="col-md-3">
-           <a href="/img/E-commerce3.PNG" data-toggle="lightbox">
-          <img src="/img/E-commerce3.PNG" alt="" class="img-fluid">
-          </a>
-         </div>
-         <div class="col-md-3">
-           <a href="/img/E-commerce4.PNG" data-toggle="lightbox">
-          <img src="/img/E-commerce4.PNG" alt="" class="img-fluid">
-          </a>
-         </div>
-        </div>
-        </div>
-      </div>
-     
-       
-     </div>
-   </div>
-   <!-- CONTACT -->
-     <div id="contact" class="collapse">
-       <div class="card card-body bg-danger text-white py-5">
-         <h2>Contact</h2>
-         <p class="lead">Jamal Noor Bhaban, 2nd Floor, 411/D/627, 
-          Ochi Miah Road, Miah Khan Nagar, South Bakolia
-          Chittagong-4000, Bangladesh
-          </p>
-       </div>
 
-     <div class="card card-body py-5">
-       <h3>Get In Touch</h3>
-       <p>E-mail: arafat.ruet.bd@gmail.com</p>
-       <form action="/" method="POST">
-         <div class="form-group">
-           <div class="input-group input-group-lg">
-             <div class="input-group-prepend">
-              <span class="input-group-text bg-danger text-white">
-                <i class="fas fa-user"></i>
-              </span>
-             </div>
-             <input type="text" name="name" class="form-control bg-dark text-white" placeholder="Name" required>
-           </div>
-         </div>
-         <div class="form-group">
-          <div class="input-group input-group-lg">
-            <div class="input-group-prepend">
-             <span class="input-group-text bg-danger text-white">
-               <i class="fas fa-envelope"></i>
-             </span>
+            <!-- WORK -->
+
+            <div id="work" class="collapse">
+              <div class="card card-body bg-warning text-white py-5">
+                <h2>My Work</h2>
+                <p class="lead">
+                  I have built severals application on various framework during my professional life.Moreover, i have
+                  experience on android app
+                  development.PHP,Java,Javascript,MongoDB,MySQL,Node.JS,Express.JS,Socket.io,Bootstrap was used to
+                  develop those applications.
+                </p>
+              </div>
+
+              <div class="card card-body py-5">
+                <section id="users">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col">
+                        <div class="card">
+                          <div class="card-header">
+                            <h4>What Have I Built?</h4>
+                          </div>
+                          <table class="table table-striped">
+                            <thead class="thead-dark">
+                              <tr>
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>Language</th>
+                                <th></th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>1</td>
+                                <td>Market Bangla Limited</td>
+                                <td>NodeJS, React, PostgreSQL, Hapi JS</td>
+                                <td>
+                                  <a href="https://marketbangla.com/" class="btn btn-secondary" target="_blank">
+                                    <i class="fas fa-angle-double-right"></i> View URL
+                                  </a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>2</td>
+                                <td>E-commerce</td>
+                                <td>MERN Stack</td>
+                                <td>
+                                  <a href="https://e-commerce-arafat.herokuapp.com/" class="btn btn-secondary"
+                                    target="_blank">
+                                    <i class="fas fa-angle-double-right"></i> View URL
+                                  </a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>3</td>
+                                <td>Blog Application</td>
+                                <td>Javascript (Node.JS)</td>
+                                <td>
+                                  <a href="https://arafat-blog.herokuapp.com/explorer" class="btn btn-secondary"
+                                    target="_blank">
+                                    <i class="fas fa-angle-double-right"></i> View URL
+                                  </a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>4</td>
+                                <td>Social Network for developer</td>
+                                <td>MERN Stack</td>
+                                <td>
+                                  <a href="https://dev-arafat.herokuapp.com/" class="btn btn-secondary" target="_blank">
+                                    <i class="fas fa-angle-double-right"></i> View URL
+                                  </a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>5</td>
+                                <td>Chat App</td>
+                                <td>Javascript (Node.JS using Socket.io)</td>
+                                <td>
+                                  <a href="https://arafat-node-chat-app.herokuapp.com/" class="btn btn-secondary"
+                                    target="_blank">
+                                    <i class="fas fa-angle-double-right"></i> View URL
+                                  </a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>6</td>
+                                <td>Burger App</td>
+                                <td>React (Javascript Library)</td>
+                                <td>
+                                  <a href="https://react-my-burger-164c2.web.app/" class="btn btn-secondary"
+                                    target="_blank">
+                                    <i class="fas fa-angle-double-right"></i> View URL
+                                  </a>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+
+                <br>
+                <div class="card card-header">
+                  <h4>Gallery</h4>
+                  <div class=" card card-body">
+                    <div class="row no-gutters mt-3">
+                      <div class="col-md-3">
+                        <a href="/img/Blog1.PNG" data-toggle="lightbox">
+                          <img src="/img/Blog1.PNG" alt="" class="img-fluid">
+                        </a>
+                      </div>
+                      <div class="col-md-3">
+                        <a href="/img/Blog2.PNG" data-toggle="lightbox">
+                          <img src="/img/Blog2.PNG" alt="" class="img-fluid">
+                        </a>
+                      </div>
+                      <div class="col-md-3">
+                        <a href="/img/Blog3.PNG" data-toggle="lightbox">
+                          <img src="/img/Blog3.PNG" alt="" class="img-fluid">
+                        </a>
+                      </div>
+                      <div class="col-md-3">
+                        <a href="/img/Blog4.PNG" data-toggle="lightbox">
+                          <img src="/img/Blog4.PNG" alt="" class="img-fluid">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="row no-gutters">
+                      <div class="col-md-3">
+                        <a href="/img/YelpCamp1.PNG" data-toggle="lightbox">
+                          <img src="/img/YelpCamp1.PNG" alt="" class="img-fluid">
+                        </a>
+                      </div>
+                      <div class="col-md-3">
+                        <a href="/img/YelpCamp2.PNG" data-toggle="lightbox">
+                          <img src="/img/YelpCamp2.PNG" alt="" class="img-fluid">
+                        </a>
+                      </div>
+                      <div class="col-md-3">
+                        <a href="/img/YelpCamp3.PNG" data-toggle="lightbox">
+                          <img src="/img/YelpCamp3.PNG" alt="" class="img-fluid">
+                        </a>
+                      </div>
+                      <div class="col-md-3">
+                        <a href="/img/weather.PNG" data-toggle="lightbox">
+                          <img src="/img/weather.PNG" alt="" class="img-fluid">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="row no-gutters">
+                      <div class="col-md-3">
+                        <a href="/img/E-commerce1.PNG" data-toggle="lightbox">
+                          <img src="/img/E-commerce1.PNG" alt="" class="img-fluid">
+                        </a>
+                      </div>
+                      <div class="col-md-3">
+                        <a href="/img/E-commerce2.PNG" data-toggle="lightbox">
+                          <img src="/img/E-commerce2.PNG" alt="" class="img-fluid">
+                        </a>
+                      </div>
+                      <div class="col-md-3">
+                        <a href="/img/E-commerce3.PNG" data-toggle="lightbox">
+                          <img src="/img/E-commerce3.PNG" alt="" class="img-fluid">
+                        </a>
+                      </div>
+                      <div class="col-md-3">
+                        <a href="/img/E-commerce4.PNG" data-toggle="lightbox">
+                          <img src="/img/E-commerce4.PNG" alt="" class="img-fluid">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
             </div>
-            <input type="email" name="email" class="form-control bg-dark text-white" placeholder="Email" required>
-          </div>
-        </div>
+            <!-- CONTACT -->
+            <div id="contact" class="collapse">
+              <div class="card card-body bg-danger text-white py-5">
+                <h2>Contact</h2>
+                <p class="lead">Jamal Noor Bhaban, 2nd Floor, 411/D/627,
+                  Ochi Miah Road, Miah Khan Nagar, South Bakolia
+                  Chittagong-4000, Bangladesh
+                </p>
+              </div>
 
-        <div class="form-group">
-          <div class="input-group input-group-lg">
-            <div class="input-group-prepend">
-              <span class="input-group-text bg-danger text-white">
-                <i class="fas fa-pencil-alt"></i>
-              </span>
+              <div class="card card-body py-5">
+                <h3>Get In Touch</h3>
+                <p>E-mail: arafat.ruet.bd@gmail.com</p>
+                <form action="/" method="POST">
+                  <div class="form-group">
+                    <div class="input-group input-group-lg">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text bg-danger text-white">
+                          <i class="fas fa-user"></i>
+                        </span>
+                      </div>
+                      <input type="text" name="name" class="form-control bg-dark text-white" placeholder="Name"
+                        required>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="input-group input-group-lg">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text bg-danger text-white">
+                          <i class="fas fa-envelope"></i>
+                        </span>
+                      </div>
+                      <input type="email" name="email" class="form-control bg-dark text-white" placeholder="Email"
+                        required>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="input-group input-group-lg">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text bg-danger text-white">
+                          <i class="fas fa-pencil-alt"></i>
+                        </span>
+                      </div>
+                      <textarea name="description" class="form-control bg-dark text-white" placeholder="Message" m
+                        required></textarea>
+                    </div>
+                  </div>
+
+                  <input type="submit" value="Submit" class="btn btn-block btn-danger btn-lg">
+                </form>
+              </div>
             </div>
-            <textarea name="description" class="form-control bg-dark text-white" placeholder="Message"m required></textarea>
-          </div>
-        </div>
+            <!-- FOOTER -->
+            <footer id="main-footer" class="p-5 bg-dark text-white">
+              <div class="row">
+                <div class="col-md-6">
+                  <a href="https://drive.google.com/file/d/11ZkEuwV7SrM5eTkNUFLD9G3-t5DXxi7u/view?usp=sharing"
+                    class="btn btn-outline-light" target=_blank>
+                    <i class="fas fa-cloud"></i> Download Resume
+                  </a>
+                </div>
+              </div>
+            </footer>
 
-        <input type="submit" value="Submit" class="btn btn-block btn-danger btn-lg">
-       </form>
-     </div>
-     </div>
-    <!-- FOOTER -->
-   <footer id="main-footer" class="p-5 bg-dark text-white">
-     <div class="row">
-       <div class="col-md-6">
-         <a href="https://drive.google.com/file/d/1XAL08JwInFb63qDDOn-CBUYtNemXQyVX/view?usp=sharing" class="btn btn-outline-light" target=_blank>
-           <i class="fas fa-cloud"></i> Download Resume
-         </a>
-       </div>
-     </div>
-   </footer>
-   
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.min.js"
-      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
-      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+            <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+              integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+              integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+              crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+              integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+              crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
 
-    <script>
-      $('.port-item').click(function(){
-        $('.collapse').collapse('hide')
-      })
-   
-      $(document).on('click', '[data-toggle="lightbox"]', function (e) {
-      e.preventDefault();
-      $(this).ekkoLightbox();
-    });
-    </script>
-  </body>
+            <script>
+              $('.port-item').click(function () {
+                $('.collapse').collapse('hide')
+              })
+
+              $(document).on('click', '[data-toggle="lightbox"]', function (e) {
+                e.preventDefault();
+                $(this).ekkoLightbox();
+              });
+            </script>
+</body>
+
 </html>
