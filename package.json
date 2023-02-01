@@ -16,7 +16,7 @@
     "express": "^4.17.1",
     "express-sanitizer": "^1.0.5",
     "express-session": "^1.17.1",
-    "mongoose": "^5.9.20",
+    "mongoose": "^5.13.15",
     "path": "^0.12.7"
   },
   "devDependencies": {
